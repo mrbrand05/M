@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--animate link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title></title>
+	<style type="text/css">
+		.navbar{margin-bottom: 0px; background-color:#20333d; color: white;text-decoration: none;}
+		.sa{background-color: rgba(255,255,255,0.5); border-radius: 100%;}
+		.hh{color: red;}
+		.s-fixed{height: 60vh; overflow: auto;}
+		.font{font-family:Comic Sans MS;}
+		.sz{background-color: white; font-size: 30px; width: 30px;}
+		h5{font-family:Lucida Console ; font-weight: bold; color: red;}
+		img:hover{ transform: scale(1.1);}
+		.panel-heading:hover{transform: scale(1.1); background-color:  #ebe85b; color: blue;}
+		.panel-body:hover{background-color: lightblue;}
+		.yu{background-color: #20333d; color: yellow;}
+		button:hover{transform: scale(1.1);}
+		footer:hover{background-color: black; color: white;}
+
+	} </style> </head> <body  ng-app="abc" ng-controller='crt'> <div
+		class="container"> <!--NAVBAR START--> <nav class="navbar navbar-inverse">
+			<div class="container-fluid"> <div class="navbar-header"> <a
+				class="navbar-brand bounceIn animated infinite bounce  font" href="#"
+				style="color:white; ">Dream Travel Agency</a> </div> <ul class="nav
+				navbar-nav navbar-right"> <li><a href="#menu1" style="color:white;
+				">Home</a></li> <li class="dropdown"><a class="dropdown-toggle"
+					data-toggle="dropdown" href="#">Packages <span class="caret"></span></a> <ul
+					class="dropdown-menu"> <li><a href="#offer1">INDIA</a></li> <li><a
+						href="#offer1">OUT OF INDIA</a></li> <li><a href="#offer1">SPECIAL</a></li>
+					</ul> </li> <li><a href="#booking">Contact</a></li> <li><a
+						href="#booking">About</a></li> <li><a href="#booking">Best deal</a></li>
+
+
+					</ul>
+
+				</div>
+			</nav>
+			<!--NAVBAR END-->
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="../images/dehli.jpg" alt="bus">
+						<div class="carousel-caption">
+							<h4 class="text-center font ZoomInDown	animated  bounce " style="font-family: Times New Roman; font-size:22px; color: white; font-variant: bold;">TRAVEL TO COMPLETERD YOUR DREAM</h4>
+							<p class="text-center">Lets keep In Touch</p>
+							<form>
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Search">
+									<div class="input-group-btn input-group-lg sa">
+										<button class="btn btn-default" type="submit" style="background-color: #ebe85b;">
+											<i class="glyphicon glyphicon-search"></i>
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div class="item">
+						<img src="../images/d55e0bf121bff82fea7846e5e2cfa845.jpg" alt="Chicago">
+						<div class="carousel-caption">
+							<h4 class="text-center font ZoomInDown	animated  bounce " style="font-family: Times New Roman; font-size: 22px; color: white; font-variant: bold;">TRAVEL TO COMPLETERD YOUR DREAM</h4>
+							<p class="text-center">Lets keep In Touch</p><form>
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Search">
+									<div class="input-group-btn input-group-lg sa">
+										<button class="btn btn-default" type="submit"style="background-color: #ebe85b;">
+											<i class="glyphicon glyphicon-search"></i>
+										</button>
+									</div>
+								</div>
+							</form></div>
+
+						</div>
+
+						<div class="item">
+							<img src="../images/car3.jpg" alt="csar">
+							<div class="carousel-caption">
+								<h4 class="text-center ZoomInDown	animated  bounce " style="font-family: Times New Roman; font-size: 22px; color: white; font-variant: bold;">TRAVEL TO COMPLETERD YOUR DREAM</h4>
+								<p class="text-center">Lets keep In Touch</p>
+								<form class="text-center">
+									<div class="input-group " style="box-sizing: 100px;">
+										<input type="text" class="form-control" placeholder="Search">
+										<div class="input-group-btn input-group-lg sa ">
+											<button class="btn btn-default" type="submit"style="background-color: #ebe85b;">
+												<i class="glyphicon glyphicon-search"></i>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+
+						</div>
+					</div>
+
+					<!-- star carousel --> 
+					<a class="left carousel-control"
+					href="#myCarousel" data-slide="prev"> <span class="glyphicon
+					glyphicon-chevron-left"></span> <span class="sr-only">Previous</span> </a> <a
+					class="right carousel-control" href="#myCarousel" data-slide="next"> <span
+					class="glyphicon glyphicon-chevron-right"></span> <span
+					class="sr-only">Next</span> </a> 
+				</div> 
+				<div class="container">
+					<!--grid--> <div class="row"> 
+						<div class="col-sm-3 s-fixed yu" > 
+							<ul class="nav nav-pills nav-stacked font">
+								<li class="active"><a data-toggle="pill" href="#travel">TRAVEL MORE</a></li> 
+
+
+								<li class=""><a data-toggle="pill" href="#home">ABOUT</a></li> 
+
+								<li><a data-toggle="pill" href="#booking">BOOKING</a></li>
+								<li><a data-toggle="pill" href="#offer1">OFFER</a></li> 
+							</ul> </div>
+							<div
+							class="col-sm-9 s-fixed">
+							<div class="tab-content">
+								<div id="travel" class="tab-pane fade in active">	<h4 class="text-center font">TRAVEL IS A JOURNEY JOYNESS HAPPINESS</h4>
+									<div class="row">
+										
+										<h5 class="text-center  bounceIn	 animated infinite bounce delay-2s">INCREDIBLE INDIA</h5>
+										<div class="col-sm-4">
+											<div class="panel panel-info">
+												<div class="panel-heading">
+													<h6 class="text-center">Taj-Mahal</h6>
+												</div>
+												<div class="panel-body">
+													<img src="../images/Taj-Mahal-Wallpaper-07-1366x768.jpg" class="img-responsive" style="height: 100px;">
+												</div>
+												<div class="panel-footer">
+													<button class="btn btn-success"> more details</button>
+												</div>
+
+
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="panel panel-info">
+												<div class="panel-heading">
+													<h6 class="text-center">Keral</h6>
+												</div>
+												<div class="panel-body">
+													<img src="../images/keral.jpg" class="img-responsive" style="height: 100px;">
+												</div>
+												<div class="panel-footer">
+													<button class="btn btn-success"> more details</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="panel panel-info">
+												<div class="panel-heading">
+													<h6 class="text-center">Rajashthan</h6>
+												</div>
+												<div class="panel-body">
+													<img src="../images/rajd.jpg" class="img-responsive" style="height: 100px;">
+												</div>
+												<div class="panel-footer">
+													<button class="btn btn-success"> more details</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--out of india--><div class="row">
+										
+										<h5 class="text-center"></h5>
+										<div class="col-sm-4">
+											<div class="panel panel-info">
+												<div class="panel-heading">
+													<h6 class="text-center">Shimla-Manali</h6>
+												</div>
+												<div class="panel-body">
+													<img src="../images/50-502176_hp-05-s2-shimla-kullu-manali-tour-package.jpg" class="img-responsive" style="height: 100px;">
+												</div>
+												<div class="panel-footer">
+													<button class="btn btn-success"> more details</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="panel panel-info">
+												<div class="panel-heading">
+													<h6 class="text-center">kutch</h6>
+												</div>
+												<div class="panel-body">
+													<img src="../images/Rann-Utsav-Feat.jpg" class="img-responsive" style="height: 100px;">
+												</div>
+												<div class="panel-footer">
+													<button class="btn btn-success"> more details</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="panel panel-info">
+												<div class="panel-heading">
+													<h6 class="text-center">Rajashthan</h6>
+												</div>
+												<div class="panel-body">
+													<img src="../images/jaypur.jpg" class="img-responsive" style="height: 100px;">
+												</div>
+												<div class="panel-footer">
+													<button class="btn btn-success"> more details</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--end out o-->
+									<!--hotels-->
+									<div class="row">
+										
+										<h5 class="text-center  bounceIn	 animated infinite bounce delay-2s">FOREIGN TOURS</h5>
+										<div class="col-sm-4">
+											<div class="panel panel-info">
+												<div class="panel-heading">
+													<h6 class="text-center">LONDON</h6>
+												</div>
+												<div class="panel-body">
+													<img src="../images/london.jpg" class="img-responsive" style="height: 100px;">
+												</div>
+												<div class="panel-footer">
+													<button class="btn btn-success"> more details</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="panel panel-info">
+												<div class="panel-heading">
+													<h6 class="text-center">BANGKOK</h6>
+												</div>
+												<div class="panel-body">
+													<img src="../images/thailand.jpg" class="img-responsive" style="height: 100px;">
+												</div>
+												<div class="panel-footer">
+													<button class="btn btn-success"> more details</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="panel panel-info">
+												<div class="panel-heading">
+													<h6 class="text-center">CHINA</h6>
+												</div>
+												<div class="panel-body">
+													<img src="../images/China-Tourism.jpg" class="img-responsive" style="height: 100px;">
+												</div>
+												<div class="panel-footer">
+													<button class="btn btn-success"> more details</button>
+												</div>
+											</div>
+										</div>
+									</div><!--end-->
+									<!--HONEYmoon-->
+									<div class="row">
+										
+										<h5 class="text-center  bounceIn	 animated infinite bounce delay-2s">HONEYMOON-PACKAGES</h5>
+										<div class="col-sm-4">
+											<div class="panel panel-info">
+												<div class="panel-heading">
+													<h6 class="text-center">ANDAMAN</h6>
+												</div>
+												<div class="panel-body">
+													<img src="../images/Best-Time-to-Visit-Andaman-Island-Andaman-Excursion.jpg" class="img-responsive" style="height: 100px;">
+												</div>
+												<div class="panel-footer">
+													<button class="btn btn-success"> more details</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="panel panel-info">
+												<div class="panel-heading">
+													<h6 class="text-center">GOA</h6>
+												</div>
+												<div class="panel-body">
+													<img src="../images/Honeymoon-Special5.jpg" class="img-responsive" style="height: 100px;">
+												</div>
+												<div class="panel-footer">
+													<button class="btn btn-success"> more details</button>
+												</div>
+
+
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div class="panel panel-info">
+												<div class="panel-heading">
+													<h6 class="text-center">BANGKOK</h6>
+												</div>
+												<div class="panel-body">
+													<img src="../images/america.jpg" class="img-responsive" style="height: 100px;">
+												</div>
+												<div class="panel-footer">
+													<button class="btn btn-success"> more details</button>
+												</div>
+
+
+											</div>
+										</div>
+
+
+									</div> </div><!--end ho-->
+									<!--about-->
+
+									<div id="home"class="tab-pane fade  ">
+										<h3 class="text-center">Why choose Dream Travel Agency</h3>
+										<div class="row">
+											<div class="col-sm-5">
+												<img src="../images/abutimg.jpg" class="img-responsive">
+											</div>
+											<div class="col-sm-7">
+												As Pioneers of innovative holiday ideas and tours, we are active across virtually every travel segment including Group Tours, Inbound Holidays, Free Individual Travel, Short Tours, Corporate Travel and Speciality Tours such as Students, Singles, Seniors, Honeymoon, Packages..
+
+												Best price guarantee
+												We offers best ideas and tours that makes your holidays best within your range
+
+												Professional local guides
+												We provide experienced local guides to take tour with joy
+
+											</div><br><br>
+											<div class="col-sm-4 text-center">
+												<span class="glyphicon glyphicon-hand-right sz" ></span><br>
+												<h5>BEST PRISES GARAUNTIES</h5>
+												<p>We offers best ideas and tours that makes your holidays best within your range</p>
+											</div>
+											<div class="col-sm-4 text-center">
+												<span class="glyphicon glyphicon-ok-sign sz"></span>
+												<h5>Professional local guides</h5>
+												<p>We provide experienced local guides to take tour with joy
+
+												</p>
+											</div>
+											<div class="col-sm-4 text-center">
+												<span class="glyphicon glyphicon-credit-card sz "></span>
+												<h5>Certifcate of Excellence</h5>
+												<p>More than 500 Successful tours arranged since 2012</p>
+											</div>
+										</div>
+									</div>
+									<!--end about-->
+									<!--strt booking-->
+									<div id="booking" class="tab-pane fade "> 
+										<div class="panel panel-info"> <div
+											class="panel-heading text-center font"> BOOKING NOW </div> <div
+											class="panel-body"> <div class="row"> <div class="col-sm-3"></div> 
+											<div
+											class="col-sm-6"  style="background-color:#bae6e0 ; border-radius: 30px;padding:
+											20px;">
+											<form class="form-group font"> NAME:	<input type="text" name=""
+												placeholder="enter ur name" class="form-control"required=""> contact no:	<input
+												type="text" name="" placeholder="enter ur name" class="form-control" required="">
+												ADDRESS:	<input type="text" name="" placeholder="enter ur name"
+												class="form-control"> PACKAGES:	<input type="text" name="" placeholder="enter
+												ur name" class="form-control" required=""> COMMENT:<textarea rows="4"
+												class="form-control" required=""></textarea><br>
+												<button class="btn
+												btn-success">SUBMIT</button>
+											</form></div>
+											<div class="col-sm-3"></div>
+										</div>
+									</div>
+								</div></div>
+								<!--end booking-->
+								<!--offer-->
+								<div id="offer1" class="tab-pane fade">
+									<div class="row">
+										<h4 class="text-center">Special offer</h4>		
+										<h5 class="font">INCREDIBLE INDIA</h5>
+										<div class="col-sm-4" ng-repeat="a in db">
+											<div class="panel panel-info">
+												<div class="panel-heading text-center">{{a.name}}
+												</div>
+												<div class="panel-body">
+													<img src="{{a.img}}" class="img-responsive" style="height: 100px;">
+												</div>
+												<div class="panel-footer" style="height: 100px;">
+													<p class="text-center">PRICE:{{a.price|currency}}</p>
+													<p class="text-center">Discount{{a.discount}}</p>
+													<a href="">MORE DETAILS</a>
+												</div>
+											</div>
+										</div></div>
+										<!--end offer in india-->
+										<!--honeymoon offeer-->
+										<div class="row">
+											<h4 class="text-center font">Special offer</h4>
+											<h5 class="font">FAMILY TRIP</h5>
+											<div class="col-sm-4" ng-repeat="a in dbl">
+												<div class="panel panel-info">
+													<div class="panel-heading text-center">{{a.name}}
+													</div>
+													<div class="panel-body">
+														<img src="{{a.img}}" class="img-responsive" style="height: 100px;">
+													</div>
+													<div class="panel-footer" style="height: 100px;">
+														<p class="text-center">{{a.price|currency}}</p>
+														<p class="text-center">{{a.discount}}</p>
+														<a href="">MORE DETAILS</a>
+
+													</div>
+												</div>
+											</div></div>
+											<!--end offer-->
+											<div class="row">
+												<h4 class="text-center font">Special offer ON HONEYMOON</h4>
+												<h5 class="font">HONEYMOON TRIP</h5>
+												<div class="col-sm-4" ng-repeat="a in dbl">
+													<div class="panel panel-info">
+														<div class="panel-heading text-center">{{a.name}}
+														</div>
+														<div class="panel-body">
+															<img src="{{a.img}}" class="img-responsive" style="height: 100px;">
+														</div>
+														<div class="panel-footer" style="height: 100px;">
+															<p class="text-center">{{a.price|currency}}</p>
+															<p class="text-center">{{a.discount}}</p>
+															<a href="">MORE DETAILS</a>
+														</div>
+													</div>
+												</div></div>
+												<script type="text/javascript">
+													var a=angular.module("abc",[]);
+													a.controller("crt",function ($scope) {
+
+														$scope.db=[{img:"../images/maharshtra.jpg",name:"maharashtra ",price:"50.000",discount:"25%"},
+														{img:"../images/79-797454_jammu-and-kashmir-tourism.jpg",name:"kashmir ",price:"50.000",discount:"35%"},
+														{img:"../images/jaypur.jpg",name:"Rajashthan ",price:"50.000",discount:"25%"},
+														{img:"../images/kerala.jpg",name:"keral ",price:"50.000",discount:"25%"},
+														{img:"../images/50-502176_hp-05-s2-shimla-kullu-manali-tour-package.jpg",name:"Shimla-Manali ",price:"50.000",discount:"25%"},
+														{img:"../images/punjab-tourism.jpg",name:"punjab darshan",price:"50.000",discount:"25%"},
+														{img:"../images/Madhya-Pradesh.jpg",name:"madha pradesh",price:"50.000",discount:"25%"},
+														{img:"../images/south-africa-safari-sunset-1000x600.jpg",name:"meghalaya ",price:"30.000",discount:"25%"},
+														{img:"../images/Best-Time-to-Visit-Andaman-Island-Andaman-Excursion.jpg",name:"goa ",price:"60.000",discount:"15%"}]
+
+														$scope.dbl=[{img:"../images/AMERICA.jpg",name:"america ",price:"90.000",discount:"25%"},
+														{img:"../images/goa.jpg",name:"AUSTROLIA ",price:"60.000",discount:"35%"},
+														{img:"../images/jaypur.jpg",name:"THAILAND ",price:"50.000",discount:"25%"},
+														{img:"../images/kerala.jpg",name:"LONDON ",price:"50.000",discount:"25%"},
+														{img:"../images/50-502176_hp-05-s2-shimla-kullu-manali-tour-package.jpg",name:"CHINA ",price:"50.000",discount:"25%"},
+														{img:"../images/punjab-tourism.jpg",name:"punjab darshan",price:"50.000",discount:"25%"},
+														{img:"../images/Madhya-Pradesh.jpg",name:"RIO",price:"50.000",discount:"25%"},
+														{img:"../images/south-africa-safari-sunset-1000x600.jpg",name:"meghalaya ",price:"30.000",discount:"25%"},
+														{img:"../images/Best-Time-to-Visit-Andaman-Island-Andaman-Excursion.jpg",name:"goa ",price:"60.000",discount:"15%"}]
+
+													})
+													
+												</script>
+
+											</div>
+											<!--end offer-->
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<footer style="background-color:#20333d; color: white; font-family: Courier; ">
+								<h4 class="text-center" style="color:white; font-weight: bold;">DREAM TRAVEL AGENCY</h4>
+								<h6 class="text-center" style="color:white; font-weight: bold;">ADDRESS:<p>TechRel Institute,Near Chatrapati Sambhaji Maharaj Statue,Garware Bridge, Deccan Gymkhana, Pune, Maharashtra 411004</p></h6>
+								<h6 class="text-center">CONTACT:825656666 /998565252 /654555555</h6>
+								<h6 class="text-center">EMAIL:dreamholiday@gmail.com</h6>
+								<h6 class="text-center">
+									<a href="#" class="fa fa-facebook"></a>
+									<a href="#" class="fa fa-twitter"></a>
+									<a href="#" class="fa fa-google"></a>
+									<a href="#" class="fa fa-linkedin"></a>
+									<a href="#" class="fa fa-youtube"></a>
+									<a href="#" class="fa fa-instagram"></a></h6></footer></div>
+								</body>
+								</html>
