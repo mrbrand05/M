@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Master Page</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+	.ioi{background-color: #797b7d;}
+	footer{background-color: black;padding: 20px; color: white;}
+	.navbar{margin-bottom: 0px;}
+	type:hover{transform: scale(1.0);}
+	.yu{background-color:black;}
+	.gh{background-color: white; color:black;}
+	img{height: 40%; width: 40%;}
+</style>
+<body ng-app="dash">
+		<nav class="navbar navbar-inverse ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">MPSC Admin Panel <span class="glyphicon glyphicon-align-justify	
+"></span></a>
+    </div>
+   
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> welcome username</a></li>>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="ioi">
+	<div class="row">
+		<div class="col-sm-2">
+			
+		</div>
+		<div class="col-sm-8" style="font-variant: bold;color: white;">
+			
+			<h3 class="text-center">MAHARAHSTRA PUBLIC SERVICES COMMISSION</h3>
+			
+				</div>
+				
+
+		<div class="col-sm-2">
+		
+		</div>
+
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-3 yu">
+		<ul class="nav nav-pills nav-stacked">
+			<li><a href="#/!">Dashboard</a></li>
+			<li><a href="#!aa">User Management</a></li>
+			<li  data-toggle="collapse" data-target="#demo"><a href="#!bb" >Mpsc Services</a></li>
+			<div class="collapse" id="demo">
+				<div class="container-fluid">
+				<ul class="nav nav-pills nav-stacked">
+					<li><a href="#!user">Test series mangement</a></li>
+			<li><a href="#!quiz">Quiz management</a></li>
+			<li><a href="#!emashik">e-mashik/e-sapathik</a></li>
+			<li><a href="#!ebook">e-book management</a></li>
+			<li><a href="#!enotes">e-notes management</a></li>
+			<li><a href="#!currenta">Current affairs</a></li>
+			<li><a href="#!jobsm">jobs management</a></li>
+			<li><a href="#!interview">interview management</a></li>
+			<li><a href="#!previous">previous pape</a></li>
+			<li><a href="#!enews">E-newspaper</a></li>
+			<li><a href="#!video">video course</a></li>
+		</ul>
+</div>
+			</div>
+			<li><a href="#!servicep">Services Provides</a></li>
+			<li><a href="#!startup">Startup Helpdesk Management</a></li>
+			<li  data-toggle="collapse" data-target="#yuu"><a href="#!transact">Transaction History</a></li>
+			<div class="collapse"  id="yuu">
+			<div class="container-fluid">
+				<ul class="nav nav-pills nav-stacked">
+			<li><a href="#!startup">User transaction</a></li>
+			<li><a href="#!video">Service provide transaction</a></li>
+		
+		</ul>
+	</div>
+</div>
+			<li><a href="#!canservice">Can Servicess Mnagement</a></li>
+			<li><a href="#!order">Order Mnagement</a></li>
+			<li><a href="#!role">User role Management</a></li>
+			<li><a href="#!blind">Writter Blind Management</a></li>
+		 <li><a href="#!noti">Notification Management</a></li>
+			<li><a href="#!misce">Miscellaneous</a></li>
+
+
+		</ul>
+		
+	</div>
+	<div ng-view class="col-sm-7 gh">
+		
+	</div>
+	<div class="col-sm-2"></div>
+</div>
+<footer>
+	<h4 class="text-center">MAHARASHTRA PUBLIC COMMISSION BOARD</h4>
+		<h4 class="text-center">email:stategov@gmail.com</h4>
+			<h4 class="text-center">emailgov@gmail.com</h4>
+
+
+</footer>
+</div>
+
+
+<script>
+var app = angular.module("dash", ["ngRoute"]);
+app.config(function($routeProvider) {
+  $routeProvider
+  .when("/", {
+    templateUrl : "main.html"
+  })
+  .when("/aa", {
+    templateUrl : "aa.html"
+  })
+  .when("", {
+    templateUrl : "bb.html"
+  })
+  .when("/user", {
+    templateUrl : "user.html"
+  })
+   .when("/quiz", {
+    templateUrl : "quiz.html"
+  })
+   .when("/emashik", {
+    templateUrl : "emashik.html"
+  })
+   .when("/ebook", {
+    templateUrl : "ebook.html"
+  })
+   .when("/enotes", {
+    templateUrl : "enotes.html"
+  })
+   .when("/currenta", {
+    templateUrl : "currenta.html"
+  })
+    .when("/jobsm", {
+    templateUrl : "jobsm.html"
+  })
+    .when("/interview", {
+    templateUrl : "interview.html"
+  })
+     .when("/previous", {
+    templateUrl : "previous.html"
+  })
+    .when("/enews", {
+    templateUrl : "enews.html"
+  })
+     .when("/video", {
+    templateUrl : "video.html"
+  })
+   .when("/servicep", {
+    templateUrl : "servicep.html"
+  })
+
+  .when("/startup", {
+    templateUrl : "startup.html"
+  })
+  .when("/transact", {
+    templateUrl : "transact.html"
+  })
+  .when("/canservice", {
+    templateUrl : "canservice.html"
+  })
+  .when("/order", {
+    templateUrl : "order.html"
+  })
+  .when("/role", {
+    templateUrl : "role.html"
+  })
+  .when("/blind", {
+    templateUrl : "blind.html"
+  })
+  .when("/noti", {
+    templateUrl : "noti.html"
+  })
+  .when("/misce", {
+    templateUrl : "misce.html"
+  })
+ .when("/etime", {
+    templateUrl : "etime.html"
+  });
+});
+</script>
+</body>
+</html>
