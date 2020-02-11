@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+	<style type="text/css">
+		body{
+background-color: #c4fbff;	}
+		.hi{
+			height: 90vh;
+			overflow: auto;
+}
+	h1,h2,h3,h4,h5,h6{
+				text-align: center;
+				background-color: blue;
+				color: white;
+	}
+		.btn a{
+			text-decoration: none;
+			color: white;
+		}
+
+		.navbar{margin-bottom: 0px;}
+	</style>
+</head>
+<body ng-app="myApp">
+	<div>
+	<!-- navbar-->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">CAN Admin <span class="
+					glyphicon glyphicon-menu-hamburger"></span></a>
+				</div>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span>Welcome</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+				</ul>
+			</div>
+	</nav>
+		<!-- end-->
+		<!-- pills-->
+		<div class="row">
+			<div class="col-sm-3 well well-sm hi">
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active"><a href="#/!">Dashboard</a></li>
+					<li><a href="#!A">User Management</a></li>
+					<li><a href="#!B">MPSC Services</a></li>
+					<li><a href="#!C">Services Provider</a></li>
+					<li><a href="#!D">Startup helpdesk Management</a></li>
+					<li><a href="#!E">Transaction History</a></li>
+					<li><a href="#!F">CAN Services Management</a></li>
+					<li><a href="#!G">Order Management</a></li>
+					<li><a href="#!H">User role Management</a></li>
+					<li><a href="#!I">Writer for blind Management</a></li>
+					<li><a href="#!J">Notification Management</a></li>
+					
+					<li><a href="#!L">Miscellaneous</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-9 hii "ng-view>
+
+</div>
+
+
+			</div>
+		</div>
+		<!-- end-->
+
+
+
+		
+
+		<script>
+			var app = angular.module("myApp", ["ngRoute"]);
+			app.config(function($routeProvider) {
+				$routeProvider
+				.when("/", {templateUrl : "dd.html"})
+				.when("/A", {templateUrl : "User_Management.html"})
+				.when("/B", {templateUrl : "mpsc.html"})
+				.when("/C", {templateUrl : "ser1.html"})
+				.when("/D", {templateUrl : "ssss.html"})
+				.when("/E", {templateUrl : "tra1.html"})
+				.when("/F", {templateUrl : "can1.html"}) 
+				.when("/G", {templateUrl : "ord.html"})
+				.when("/H", {templateUrl : "user.html"})
+				.when("/I", {templateUrl : "Writer.html"})
+				.when("/J", {templateUrl : "Notification.html"})
+				
+				.when("/L", {templateUrl : "mm2.html"})
+				.when("/z",{templateUrl:"add_user.html"})
+				.when("/y",{templateUrl:"addno.html"})
+				.when("/q",{templateUrl:"addet.html"})
+				.when("/x",{templateUrl:"addest.html"})
+				.when("/w",{templateUrl:"addesty.html"})
+				.when("/k",{templateUrl:"addet.html"})
+				.when("/u",{templateUrl:"addest.html"})
+				.when("/n",{templateUrl:"addesty.html"});
+			});
+		</script>
+	</body>
+	</html>
